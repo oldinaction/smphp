@@ -1,0 +1,19 @@
+<extend name="Public/base"/><!-- 继承父模板 -->
+
+<block name="container-body"><!-- 替换父模板container-body区 -->
+	<div class="container-body">
+		<div class="container-main">
+			<a data-type="0" biz-itemid="{$item_id}" data-tmpl="60x25" data-tmplid="623" data-rd="2" data-style="2" data-border="1" href="{$item_url}">去购买</a>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+	//自动跳转
+	$(function(){
+		alert($("a").attr("href"));
+		
+	});
+
+
+	</script>		
+</block>

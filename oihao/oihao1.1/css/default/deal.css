@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+
+#no-deal {
+	width:auto;
+	height:600px;
+	border:2px solid #9ed5ff;
+}
+#no-deal h2 {
+	text-indent:0;
+	text-align:center;
+}
+#no-deal ul{
+	display:block;
+	width:100%;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	font-size:14px;
+}
+#no-deal ul:hover{
+	background:#f5f9ff;
+}
+#no-deal ul li{
+	display:block;
+	float:left;
+	margin:0 2px;
+}
+#no-deal ul li a.blog-sites{
+	display:block;
+	width:110px;/*设置宽度*/
+	white-space:nowrap;/*设置不折行*/
+	text-overflow:ellipsis;/*这就是省略号喽*/
+	-o-text-overflow:ellipsis;/*兼容opera*/
+	overflow: hidden;/*设置超过的隐藏*/
+	padding:0 4px;
+	cursor: pointer;	
+}

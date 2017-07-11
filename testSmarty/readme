@@ -1,0 +1,7 @@
+smarty文件夹其实就是Smarty官网下载的源码中的libs文件夹
+
+templates_c cache文件夹会自动生成
+
+configs目录下的配置文件后缀可以随便定义，为了容易识别一般定义为.conf
+
+tpl文件里面不能执行php代码

@@ -1,0 +1,330 @@
+/*index.php start*/
+	/*全局样式 start*/
+				*{margin:0;padding:0;}
+				/*body的样式*/
+				body{
+					font-size:12px;
+					font-family:"微软雅黑";
+					color:#666;
+					background:#eee;
+				}
+				a{text-decoration:none;}
+				img{border:0;}
+	/*end 全局样式*/
+
+	/*头部样式 start*/
+		/*顶部 start*/
+		.top{
+			width: 960px;
+			height:60px;
+			margin:10px auto;
+		}
+		.top .t_text a{
+			display:block;
+			float:left;
+			color:#af9e7a;
+			line-height:60px;
+			padding:0 10px;
+		}
+		.top .t_text a:hover{
+			color:#ff7000;
+		}
+		.top .t_img{
+			margin-right:200px;
+		}
+		.top .t_img span{
+			display:block;
+			width:74px;
+			height:45px;
+			float:right;
+		}
+		.top .t_img .sina_weibo{	
+			background: url(../images/head/sina_weibo.jpg)0 0;			
+		}
+		.top .t_img .tx_weibo{
+			background: url(../images/head/tx_weibo.jpg) 0 0;
+		}
+		.top .t_img .mailqq{
+			background: url(../images/head/mailqq.jpg) 0 0;
+		}
+		.top .t_img .rss{
+			background: url(../images/head/rss.jpg) 0 0;
+		}
+		.top .t_img .sina_weibo:hover{	
+			background: url(../images/head/sina_weibo.jpg)0 -45px;			
+		}
+		.top .t_img .tx_weibo:hover{
+			background: url(../images/head/tx_weibo.jpg) 0 -45px;
+		}
+		.top .t_img .mailqq:hover{
+			background: url(../images/head/mailqq.jpg) 0 -45px;
+		}
+		.top .t_img .rss:hover{
+			background: url(../images/head/rss.jpg) 0 -45px;
+		}
+		/*end 顶部*/
+		/*logo start*/
+		.logo{
+			width:960px;
+			height: 64px;
+			margin: 40px auto 10px;
+		}
+		.logo .l_logo{
+			display:block;
+			float:left;
+			width:400px;
+		}
+		.logo .l_ads{
+			display:block;
+			float:right;
+			height:33px;
+			font-size: 14px;
+			color: rgb(255, 112, 0);
+			line-height: 33px;
+			margin-top: 30px;
+			padding: 0px 15px;
+		}
+
+		/*end logo*/
+		/*导航的样式 start*/
+		.nav{
+			width:100%;
+			height:40px;
+			background:rgb(255, 162, 0);
+		}
+		.nav ul{
+			width:960px;
+			height:40px;
+			margin:0px auto; /*此处必须指定width后margin: 0px auto;才能有效，否则他会继承上面.nav的width:100%;同理也指定height。水平居中要指定width；垂直居中要指定height*/
+			border-left: 5px solid rgb(255, 174, 0);
+		}
+		.nav ul li{
+			float:left;
+			list-style:none;
+			font-size:16px;
+			padding-left:50px;
+			line-height:40px;
+		}
+		.nav ul li a{
+			color:#fff;
+		}
+		.nav ul li a:hover{
+			color:rgb(255, 112, 0);;
+		}
+		/*end 导航的样式*/
+	/*end 头部样式*/
+
+	/*content start*/
+		.content{width:960px; height:300px;padding:10px 0;margin:18px auto 0;}
+		/*notice start*/
+		.content .notice{float:left;width:560px; height:300px;}
+		.content .notice .n_title{height:40px;font-size:18px;line-height:40px;}
+		.content .notice .n_text{height:340px;}
+		.content .notice .n_text ol{padding-left:38px;}
+		.content .notice .n_text ol li{height:50px;font-size:14px;}
+		/*end notice*/
+		/*loginBox start*/
+		.content .loginBox{float:right;width:350px;height:260px;padding:20px;border: 1px solid #cacaca;}
+		.content .loginBox .login_form .main ul{list-style:none;}
+		.content .loginBox .login_form .main ul a{font-size:16px;color:#af9e7a;}
+		.content .loginBox .login_form .main ul a:hover{color: #ff7000;}
+		.content .loginBox .login_form .main ul li{height:40px;}
+		.content .loginBox .login_form .main ul li span{display:inline-block;width:64px;font-size:14px;line-height:40px;}
+		.content .loginBox .login_form .main ul li span u{text-decoration:none;}
+		.content .loginBox .login_form .main ul #g_u input{width:200px;height:26px;}
+		.content .loginBox .login_form .main ul #g_p input{width:200px;height:26px;}
+		.content .loginBox .login_form .main ul .login_button{width:206px;margin-left:68px;}
+		.content .loginBox .login_form .main ul .login_button input{display:block;height:36px;padding:10px 16px;margin:10px 0;}
+		.content .loginBox .login_form .main ul .login_button #login_btn{float:left;}
+		.content .loginBox .login_form .main ul .login_button #logout_btn{float:right;}
+		/*end loginBox*/
+	/*end content*/
+
+	/*附加 start*/
+				/*滚动公告 start*/
+				.additional{
+					width:100%;
+					height:500px;
+					background:url(../images/article_imgbg.gif);
+					border-top:1px solid #cacaca;
+					margin-top:40px;
+				}
+				.additional .gonggao{
+					width:621px;/*此时宽度必须和图片的宽度一致，下面的margin:10px auto;才能是图片居中*/
+					margin:50px auto;
+				}
+				.additional .gonggao .img_a{
+					width:621px;
+					height:46px;
+				}
+				.additional .gonggao .img_a a{
+					font-size:14px;
+					color:#af9e7a;
+					position:relative;
+					top:-37px;
+					left:80px;	
+				}
+				.additional .gonggao .img_a a:hover{
+					color:#ff7000;
+				}
+				/*end 滚动公告*/
+				/*关于我们 start*/
+				.additional .a_about{
+					width:960px;
+					margin:0 auto;
+				}
+				.additional .a_about h3{
+					font-size:16px;
+					color:#ff7000;
+					margin-bottom:10px;
+				}
+				.additional .a_about p{
+					font-size:100%;
+					line-height:20px;
+					text-indent:24px; /*缩进两个汉字的大小，此时字体大小为12px，所以缩进24px*/
+				}
+				/*end 关于我们*/
+				/*友情链接 start*/
+				.additional .link .beautify{
+					clear:both;
+					width:508px;				
+					margin:0 auto;
+				}
+				.additional .link .beautify img{
+					margin-top:30px;
+				}
+				.additional .link .link_all{
+					width:960px;
+					margin:0 auto;
+				}
+				.additional .link .link_all .link_ico{
+					color:#ff7000;
+					margin-top:20px;
+					margin-bottom:20px;
+				}
+				.additional .link .link_all .link_ico h3{
+					font-size:16px;
+					margin-bottom:10px;
+				}
+				.additional .link .link_all .link_ico h3 a{font-size:14px;color:#af9e7a;margin:0 15px;}
+				.additional .link .link_all .link_ico h3 a:hover{color:#ff7000;}
+				.additional .link .link_all ul{
+					list-style:none;
+				}
+				.additional .link .link_all ul li{
+					float:left;
+					margin:2px 80px 2px 0;
+				}
+				.additional .link .link_all ul li a{
+					font-size:14px;
+					color:#af9e7a;
+				}
+				.additional .link .link_all ul li a:hover{
+					color:#ff7000;
+				}
+				/*end 友情链接*/
+	/*end 附加*/
+
+	/*页脚 start*/
+				.footer{
+					width:100%;
+					height:240px;
+					background:url(../images/footer/footerbg.png) repeat-x;
+				}
+				/*页脚订阅图片 start*/
+				.footer .f_image{
+					width:476px;
+					height:120px;
+					margin:0px auto;
+					padding-top:40px;
+					
+				}
+				.footer .f_image .rehome{
+					display:block;
+					float:left;
+					width:119px;
+					height:95px;
+					background:url(../images/footer/rehome.gif) 0 0 no-repeat;
+				}
+				.footer .f_image .xmlasrss{
+					display:block;
+					float:left;
+					width:119px;
+					height:95px;
+					background:url(../images/footer/xmlasrss.gif) 0 0 no-repeat;
+				}
+				.footer .f_image .qqemail{
+					display:block;
+					float:left;
+					width:119px;
+					height:95px;
+					background:url(../images/footer/qqemail.gif) 0 0 no-repeat;
+				}
+				.footer .f_image .addweb{
+					display:block;
+					float:left;
+					width:119px;
+					height:95px;
+					background:url(../images/footer/addweb.gif) 0 0 no-repeat;
+				}
+				.footer .f_image .rehome:hover{
+					background:url(../images/footer/rehome.gif) 0 -95px no-repeat;
+				}
+				.footer .f_image .xmlasrss:hover{
+					background:url(../images/footer/xmlasrss.gif) 0 -95px no-repeat;
+				}
+				.footer .f_image .qqemail:hover{
+					background:url(../images/footer/qqemail.gif) 0 -95px no-repeat;
+				}
+				.footer .f_image .addweb:hover{
+					background:url(../images/footer/addweb.gif) 0 -95px no-repeat;
+				}
+				/*end 页脚订阅图片*/
+				/*版权信息 start*/
+				.footer .copyright{
+					clear:both;
+					width:960px;
+					margin:0 auto;
+					text-align:center;
+					line-height:20px;
+					color:rgb(167, 95, 2);
+				}
+				.footer .copyright a{
+					color:rgb(167, 95, 2);
+				}
+				.footer .copyright a:hover{
+					color:#fff;
+				}
+				/*end 版权信息*/
+	/*end 页脚*/
+/*end index.php*/
+
+
+/*getsid.php start*/
+	.getsid{width:960px;margin:10px auto 0;}
+	.getsid .n_text{height:340px;font-size:16px;}
+	.getsid .n_text a{color:#af9e7a;}
+	.getsid .n_text a:hover{color: #ff7000;}
+	.getsid .n_text ol{padding-left:38px;}
+	.getsid .n_text ol li{padding:10px;font-size:14px;line-height:30px;}
+/*end getsid.php*/
+
+
+/*look.php start*/
+	.look{width:960px;margin:10px auto 0;}
+	.look .qqlist{margin:10px auto 30px;width:900px;border:1px solid #666;border-collapse:collapse;
+					font-family:"楷体";text-align:center;line-height:36px;text-transform:capitalize;}
+	.look .qqlist .l_menu{font-size:16px;font-weight:bold;line-height:45px;}
+	.look .qqlist .l_sm{font-size:16px;}
+	.look .qqlist .l_sm a{color: #ff7000;}
+	.look .qqlist .l_sm a:hover{color: #fff;}
+	.look .qqlist th{font-size:20px;line-height:50px;border:1px solid #666;}
+	.look .qqlist tr td{height:36px;border:1px solid #666;}
+	.look .qqlist tr td a img{display:block;width:77px;margin:7px auto;}
+	.look .qqlist tr:hover{background:#6C0;}
+	.look .qqlist tr td:hover{background:#C6F;color:#fff;}
+/*end look.php*/
+
+
+
+

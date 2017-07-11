@@ -1,0 +1,120 @@
+/*
+* 按照360导航设计(hao.360.cn)
+* 总宽1000px	左侧副栏274px 右侧正栏708px		
+*/
+@CHARSET "UTF-8";
+@import "header.css";
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font: 12px/1.5 "\5b8b\4f53",arial,georgia,verdana,helvetica,sans-serif;
+}
+body, .wrapper {
+	background-color: #fff; 
+}
+h1, h2, h3, h4, h5, h6, input, textarea, select, address, caption, cite, code, dfn, em, i, b, strong, small, th, var, abbr {
+font-size: 100%;
+font-style: normal;
+}
+
+.wrapper, #doc-wrap, #doc-view {
+	min-width: 1002px;
+}
+#doc-view, #doc-hd, #doc-bd, #doc-ft {
+	position: relative;
+}
+#doc-view {
+	z-index: 1;
+	width: 100%;
+	color: #333;
+}
+.container {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+img, object, select, input, textarea, button {
+	vertical-align: middle;
+}
+fieldset, img {
+	border: 0;
+}
+a {
+	color:#333;
+	text-decoration:none;
+	font-weight: normal;
+	cursor: pointer;
+}
+a:hover {
+	color:#f00;
+	text-decoration:underline;
+}
+ul, ol, menu {
+	list-style: none;
+}
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+ins, s, u, del {
+	text-decoration: none;
+}
+h2 {
+	font-size:14px;
+	background:#f5f9ff;
+	height:25px;
+	line-height:25px;
+	text-indent:10px;
+}
+
+
+.clearfix, .hd, .bd, .ft, .module, .list-fluid {
+	zoom: 1; /*是IE浏览器的专有属性。功能：设置或检索对象的缩放比例，触发ie的hasLayout属性，清除浮动、清除margin的重叠*/
+}
+.clearfix:after, .hd:after, .bd:after, .ft:after, .module:after, .list-fluid:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	content: '';
+}
+.f-l {
+	float: left;
+}
+.f-r {
+	float: right;
+}
+
+
+
+#copyright {
+	width:100%;
+	margin-top: 10px;
+	border-top: 1px solid #7e7e7e;
+	background-color: #5e5e5e;
+}
+#copyright .container {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 12px;
+	font-family: Arial;
+	color: #c2c2c2;
+}
+.container {
+	margin: 0 auto;
+	width: 1000px;
+}
+#copyright a, #copyright .copyright-txt {
+	padding: 0 3px;
+	color: #c2c2c2;
+}
+
+
+
+
+
+

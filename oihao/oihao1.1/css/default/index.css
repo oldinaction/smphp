@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+@import "blog_sites.css";
+
+#tools{
+	width:274px;
+	height:266px;
+	margin-top:10px;
+	border: 1px solid #f2f2f2;
+}
+#tools .good{
+	position:relative;
+	float:left;
+	width:136px;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+}
+#tools .good:hover{
+	background:#f5f9ff;
+}
+#tools .good img{
+	position:absolute;
+	top:12px;
+	left:16px;
+}
+#tools .good a{
+	white-space:nowrap;/*设置不折行*/
+	text-overflow:ellipsis;/*这就是省略号喽*/
+	-o-text-overflow:ellipsis;/*兼容opera*/
+	overflow: hidden;/*设置超过的隐藏*/
+	margin-left:34px;
+	padding:0 4px;
+}
+
+#ads{
+	width:274px;
+	height:250px;
+	margin-top:10px;
+	border: 1px solid #f2f2f2;
+}
+#ads .adsite{
+	position:relative;
+	float:left;
+	width:136px;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+}
+#ads .adsite:hover{
+	background:#f5f9ff;
+}
+#ads .adsite img{
+	position:absolute;
+	top:12px;
+	left:16px;
+}
+#ads .adsite a{
+	white-space:nowrap;/*设置不折行*/
+	text-overflow:ellipsis;/*这就是省略号喽*/
+	-o-text-overflow:ellipsis;/*兼容opera*/
+	overflow: hidden;/*设置超过的隐藏*/
+	margin-left:34px;
+	padding:0 4px;
+}

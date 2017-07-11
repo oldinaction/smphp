@@ -1,0 +1,410 @@
+@CHARSET "UTF-8";
+/*********doc-hd开始*********/
+#doc-hd {
+	z-index: 300;
+}
+#topbar {
+	position: relative;
+	height: 34px;
+}
+.switch-vers-default .theme-topbar {
+	border-bottom: 1px solid #d6d6d6;
+}
+#topbar .topbar-bg {
+	position: absolute;
+	width: 100%;
+	background-color: #fbfbfb;
+	opacity: 1;
+	filter: alpha(opacity=60);
+}
+#topbar .f-l, #topbar .f-r {
+	position: relative;
+	top: 1px;
+}
+#top-calendar {
+	margin-right: 24px;
+	line-height: 34px;
+}
+.theme-topbar-anchor-parent a {
+	color: #666;
+}
+/*开始天气*/
+#weather-show {
+	position: relative;
+	padding-right: 18px;
+	line-height: 34px;
+	font-family: Arial;
+	cursor: pointer;
+	background-image: url(images/down.png);
+	background-repeat: no-repeat;
+	background-position: right 14px;
+}
+#weather-show .weather-pic {
+display: inline-block;
+position: relative;
+top: -2px;
+width: 27px;
+height: 23px;
+vertical-align: middle;
+}
+#weather-show .weather-pollution {
+margin-left: 6px;
+}
+#weather-show .pm-level0 em, #weather-show .pm-level1 em {
+background-color: #3ba354;
+}
+#top-weather:hover #weather{
+	display:block;
+}
+#weather .weather-notice .exp span, #weather .weather-notice .exp strong, #weather .weather-notice .exp em {
+	display: inline;
+	float: left;
+}
+#weather {
+	display:none;
+	overflow: hidden;
+	position: absolute;
+	top: 33px;
+	margin-left: -14px;
+	padding: 0 6px 6px;
+	width: 270px;
+	border: 1px solid #d7d7d7;
+	background-color: #fff;
+}
+#weather .weather-future {
+position: absolute;
+top: 6px;
+right: 15px;
+color: #999;
+}
+#weather .weather-citysetting {
+padding-left: 10px;
+height: 30px;
+}
+#weather .weather-citysetting .current-city {
+line-height: 30px;
+color: #666;
+}
+#weather .weather-citysetting .btn-setting {
+line-height: 30px;
+color: #999;
+}
+#weather .weather-list {
+padding-bottom: 10px;
+border-bottom: 1px dashed #e4e4e4;
+}
+#weather .weather-list a {
+float: left;
+padding: 1px;
+width: 88px;
+height: 115px;
+line-height: 22px;
+text-align: center;
+font-family: Arial;
+color: #666;
+}
+#weather .weather-notice {
+overflow: hidden;
+padding: 0 6px;
+border-bottom: 1px dashed #e4e4e4;
+}
+#weather .weather-notice .exp {
+height: 40px;
+line-height: 40px;
+}
+#weather .weather-notice .exp a {
+color: #333;
+}
+#weather .weather-notice .exp span {
+position: relative;
+top: 2px;
+}
+#weather .weather-notice .exp strong {
+position: relative;
+top: 2px;
+margin-left: 8px;
+margin-right: 20px;
+font-size: 18px;
+font-family: Arial;
+}
+#weather .weather-notice .exp .pm25 em {
+overflow: hidden;
+position: relative;
+top: 8px;
+padding: 0 4px;
+width: 62px;
+height: 24px;
+line-height: 24px;
+text-align: center;
+}
+#weather .weather-exp {
+margin-right: -28px;
+padding-top: 6px;
+}
+#weather .weather-exp li {
+float: left;
+margin-right: 8px;
+padding-left: 6px;
+width: 128px;
+line-height: 24px;
+border-right: 1px dotted #ccc;
+}
+#weather .issued-date {
+margin-top: 8px;
+margin-right: 8px;
+text-align: right;
+color: #ccc;
+}
+#weather .issued-date a {
+color: #ccc;
+}
+#weather-citypanel {
+display: none;
+position: absolute;
+top: 38px;
+left: -13px;
+padding: 2px 0 0 16px;
+width: 266px;
+height: 54px;
+color: #666;
+background-color: #fff;
+}
+#weather-citypanel .btn-cancel {
+margin-left: 20px;
+color: #666;
+}
+#weather-citypanel select {
+width: 64px;
+}
+#weather-citypanel .done {
+padding: 0 5px;
+height: 22px;
+cursor: pointer;
+}
+/*天气结束*/
+#topbar .f-l, #topbar .f-r {
+position: relative;
+top: 1px;
+}
+#topbar-theme.f-r {
+top: 0;
+}
+#topbar-theme a {
+float: left;
+display: block;
+padding: 0 8px;
+height: 34px;
+line-height: 36px;
+}
+#top-menu {
+line-height: 34px;
+}
+#top-menu a {
+margin: 0 5px;
+}
+.theme-topbar .theme-text {
+color: #ccc;
+}
+
+/*********结束doc-hd*********/
+/*********doc-bd开始*********/
+#doc-bd {
+	z-index: 200;
+}
+#doc-main, #doc-main-hd, #doc-main-bd, #doc-main-ft {
+	position: relative;
+}
+#doc-main {
+	z-index: 100;
+}
+#doc-main-hd{
+	z-index: 300;
+}
+/*头部节点*/
+#header-section {
+	z-index: 90;
+	position: relative;
+	height: 130px;
+}
+#header-section .item-logo {
+	position: absolute;
+	top: 37px;
+	left: 0;
+	width: 248px;
+	height: 70px;
+}
+.default-logo {
+	display: block;
+}
+.theme-logo {
+	display: none;
+	background: none;
+	text-indent:-9999px;/*把文本移动到浏览器外，这样爬虫可以找到，但是用户看不见*/
+}
+#imgLogo, #themeLogo {
+	position: absolute;
+	top:-4px;
+}
+#header-section .item-search {
+	position: absolute;
+	top: 13px;
+	left: 267px;
+	width: 620px;
+	height: 110px;
+	-webkit-backface-visibility: hidden;
+}
+#search {
+	position: relative;
+	height: 110px;
+}
+#search .search-hd {
+	z-index: 2;
+	position: relative;
+	padding: 9px 0 0 0;
+	margin-left: 5px;
+	width: 550px;
+	height: 24px;
+}
+#search .tab li {
+	position: relative;
+	float: left;
+	margin-right: 7px;
+	width: 40px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.theme-search-tab li:hover {
+	background: #91CE79;
+}
+.theme-search-tab li:hover a{
+	color: #fff;
+	text-decoration: none;
+}
+.theme-search-tab a {
+	color: #333;
+}
+#search .tab li.on {
+	background: #3EAF0E;
+	cursor: default;
+}
+#search .tab li.on a {
+	color: #fff;
+	text-decoration: none;
+	cursor: default;
+}
+#search .tab li.on a.link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#search .search-bd {
+	z-index: 1;
+	position: relative;
+	padding-top: 5px;
+	height: 70px;
+}
+#search .form-group {
+	position: relative;
+	width: 620px;
+	height: 42px;
+}
+#search .form-group legend {
+	display: none;
+}
+#search-input {
+	display: inline;
+	float: left;
+	margin: 0 5px 0 8px;
+	position: relative;
+	width: 504px;
+	height: 39px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #9c9c9c;
+	background: #fff;
+	-moz-box-shadow: inset 1px 1px 1px #dedede;
+	-webkit-box-shadow: inset 1px 1px 1px #dedede;
+	box-shadow: inset 1px 1px 1px #dedede;
+}
+#search-input input {
+	margin-top: 10px;
+	padding: 0 6px;
+	width: 470px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 16px;
+	font-family: arial;
+	border: 0;
+	background: 0;
+	outline: 0;
+	-webkit-appearance: none;
+}
+#search-btn {
+	overflow: hidden;
+	float: left;
+	width: 100px;
+	height: 41px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	color: #fff;
+	border: 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.theme-search-btn {
+	background-color: #3ba354;
+	background-image: url('images/theme-search-btn.png');
+}
+#search-btn:hover {
+	background-color: #3b9651;
+	background-position: 0 -42px;
+}
+
+
+/*导航节点*/
+#nav-section {
+	z-index: 80;
+	position: relative;
+	height: 40px;
+}
+#nav {
+	height: 40px;
+}
+.theme-nav {
+	background-color: #3ba354;
+}
+#nav .nav-menu {
+	height: 40px;
+}
+#nav .nav-menu .item {
+	float: left;
+}
+#nav .nav-menu .item-link {
+	position: relative;
+	display: inline-block;
+	padding: 0 12px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+}
+#nav a {
+	font-size: 14px;
+}
+#nav .nav-menu .on {
+	font-weight: bold;
+	background-color: #318846;
+}
+#nav .nav-menu .on, #nav .nav-menu .item-link:hover {
+	text-decoration: none;	
+}
+#nav .nav-menu .item-link:hover {
+	color: #fff;
+}
+.theme-nav .hover .theme-nav-item-link, .theme-nav-item-link:hover {
+	background-color: #3b9651;
+}
+

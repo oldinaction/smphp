@@ -1,0 +1,21 @@
+[ 2016-01-24T12:09:39+08:00 ] 127.0.0.1 /mayiteam/Home/Index/Home/Item/jump?id=524456227912&url=http://item.taobao.com/item.htm?id=524456227912
+ERR: 非法操作:Home
+
+[ 2016-01-24T12:10:30+08:00 ] 127.0.0.1 /mayiteam/Home/Index/Home/Item/jump/id=524456227912&url=http://item.taobao.com/item.htm?id=524456227912
+ERR: 非法操作:Home
+
+[ 2016-01-24T12:10:32+08:00 ] 127.0.0.1 /mayiteam/Home/Index/Home/Item/jump/id=524456227912&url=http://item.taobao.com/item.htm?id=524456227912
+ERR: 非法操作:Home
+
+[ 2016-01-24T12:11:41+08:00 ] 127.0.0.1 /mayiteam/Home/Index/Home/Item/jump/id/524456227912/url/http://item.taobao.com/item.htm?id=524456227912
+ERR: 非法操作:Home
+
+[ 2016-01-24T12:11:44+08:00 ] 127.0.0.1 /mayiteam/Home/Index/Home/Item/jump/id/524456227912/url/http://item.taobao.com/item.htm?id=524456227912
+ERR: 非法操作:Home
+
+[ 2016-01-24T12:11:52+08:00 ] 127.0.0.1 /mayiteam/Home/Index/Home/Item/jump/id/524456227912&url/http://item.taobao.com/item.htm?id=524456227912
+ERR: 非法操作:Home
+
+[ 2016-01-24T12:13:32+08:00 ] 127.0.0.1 /mayiteam/Home/Index/Home/Item/jump/id/524456227912
+ERR: 非法操作:Home
+

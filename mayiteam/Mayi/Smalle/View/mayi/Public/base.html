@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>蚂蚁窝控制台</title>
+		<meta name="keywords" content="关键词,关键词">
+		<meta name="description" content="">
+
+		<!--css,js-->
+		<link type="text/css" rel="stylesheet" href="__STATIC__/css/base.css?version=1.0">
+		<link type="text/css" rel="stylesheet" href="__CSS__/mayi.css?version=1.0">
+		<style type="text/css">
+
+		</style>
+		<script type="text/javascript" src="__STATIC__/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				//解决点击后交替改变样式(利用附加数据)
+				$(".sidebar-fold").data("sidebarFlag","false");
+				$(".sidebar-fold").click(sidebarChange);
+				function sidebarChange(){
+					var dataSidebarFlag = $(".sidebar-fold").data("sidebarFlag");
+					if(dataSidebarFlag == "false") {
+						$(".doc-sidebar").css("width","50px");
+						$(".doc-content").css("left","50px");
+						$(".sidebar-fold-border").css("left","20px");
+						$(".sidebar-fold").data("sidebarFlag","true");
+					} else {
+						$(".doc-sidebar").css("width","180px");
+						$(".doc-content").css("left","180px");
+						$(".sidebar-fold-border").css("left","80px");
+						$(".sidebar-fold").data("sidebarFlag","false");
+					}
+				}
+			});
+		</script>
+
+	</head>
+<body>
+
+<div class="docwrapper">
+	<div class="docheader">
+		<div class="header-topbar">
+			<div class="topbar-wrap">
+				<div class="topbar-head left">
+					<div class="topbar-logo left">logo</div>
+				</div>
+				<div class="topbar-nav left">
+					<a class="topbar-nav-btn" href="javascript:void(0);">主菜单</a>
+					<div class="dropdown-menu left"></div>
+				</div>
+				<div class="topbar-info right"></div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+
+	<div class="doccontainer">
+		<div class="doc-sidebar">
+			<div class="sidebar-content">
+				<div class="sidebar-inner">
+					<div class="sidebar-fold">
+						<span class="sidebar-fold-border"></span><span class="sidebar-fold-border"></span><span class="sidebar-fold-border"></span>
+					</div>
+					<div class="sidebar-nav">
+						<div class="sidebar-title">
+							<span class="sidebar-title-icon">采</span>
+							<span class="sidebar-title-text">采集设置</span>
+						</div>
+						<ul class="sidebar-trans">
+							<li>
+								<a href="#">
+									<div class="nav-icon">
+										<span>鹊</span>
+									</div>
+									<span class="nav-title">鹊桥采集</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="nav-icon">
+										<span>商</span>
+									</div>
+									<span class="nav-title">商品采集</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="doc-content">
+			<div class="doc-content-nav">
+				
+			</div>
+			<div class="doc-content-body">
+				<block name="body">
+					内容区：子模板继承后替代
+				</block>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+
+
+	<div class="docfooter"></div>
+
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+#add {
+	width:auto;
+	height:600px;
+	border:2px solid #9ed5ff;
+}
+#add h2 {
+	text-indent:0;
+	text-align:center;
+}
+#add dl {
+	width:400px;
+	margin:0 auto;
+}
+#add dl dt {
+	text-align:center;
+	font-weight:bold;
+	margin:20px 0;
+}
+#add dl dd {
+	margin:10px 0;
+}
+#add dl dd input.text {
+	width:220px;
+	height:19px;
+	padding-left:10px;
+	border:1px dashed #333;
+}
+#add dl #tags{
+	float:left;
+}
+#add dl #tags span {
+	display:block;
+	float:left;
+}
+#add dl #tags label {
+	display:block;
+	float:left;
+	width:80px;
+}
+#add dl #tags .tag{
+	margin-left:60px;
+}
+#add dl #tags label input {
+	margin:4px 4px 0 0;
+}
+#add dl dd input.desc {
+	width:230px;
+	height:40px;
+}
+#add dl dd input.code {
+	width:80px;
+}
+#add dl dd #codeimg {
+	position:relative;
+	left:5px;
+	cursor:pointer;
+}
+#add dl dd input.add {
+	width:60px;
+	height:19px;
+	margin:0 0 0 120px;
+	border:1px dashed #333;
+	cursor:pointer;
+}
+
+

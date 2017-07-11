@@ -1,0 +1,109 @@
+<extend name="Public/base"/><!-- 继承父模板 -->
+
+<block name="body"><!-- 替换父模板的此区块 -->
+	
+	<table class="">
+                <thead>
+                    <tr >
+                       <th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+                        <th>商品名称</th>
+                        <th>商品类型</th>
+                        <th>价格(元)</th>
+                        
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <notempty name="_list">
+                <volist name="_list" id="data">
+                    <tr class="pointer even" title="">
+                        <td><input class="ids" type="checkbox" name="id[]" value="{$data.id}" /></td>
+                        <td><a href="{$data['item_url']}" target='_blank'>{$data['name']}</a></td>
+                        <td>{$data['goods_type']}</td>
+                        <td>{$data['price']}</td>
+           
+                        <td> 
+                            <a target="_blank" href='http://pub.alimama.com/myunion.htm?spm=a2320.7388781.a214tr8.d006.IyDOZN#!/promo/self/items?q={:urlencode($data[item_url])}'>查看</a>
+                            |
+                            <a id="" href="{:U('Collect/addToGoods',array('id'=>$data['id']))}" onclick="if(confirm('上架成功的商品请在商品列表里查看')){return true;}" title="">上架</a>
+                            |
+                            <a class="confirm ajax-get"  href="{:U('Collect/delCollectGoods',array('id'=>$data['id']))}" title="删除">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+                <else/>
+				<td colspan="9" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+                </tbody>
+            </table>
+            
+            
+	<div class="goods-collect">
+		<form action="{:U('Collect/index')}" method="post">
+			<table>
+				<thead><h3>商品采集</h3></thead>
+				<tbody>
+					<tr>
+						<td>采集规则名称</td>
+						<td><input name="name" value="123"/></td>
+					</tr>
+					<tr>
+						<td>关键字<font color="red">*</font></td>
+						<td><input name="q"  value="羽绒服"/></td>
+					</tr>
+					<tr>
+						<td>类目ID<font color="red">*</font></td>
+						<td><input name="cid"/></td>
+					</tr>
+					<tr>
+						<td>所属分类</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>起始价格</td>
+						<td><input name="start_price" value="1"/></td>
+					</tr>
+					<tr>
+						<td>最高价格</td>
+						<td><input name="end_price"  value="1000"/></td>
+					</tr>
+					<tr>
+						<td>佣金比率下限</td>
+						<td><input name="start_tk_rate" placeholder="123表示1.23%"  value="123"/></td>
+					</tr>
+					<tr>
+						<td>佣金比率上限</td>
+						<td><input name="end_tk_rate" placeholder="1234表示12.34%"  value="1234"/></td>
+					</tr>
+					<tr>
+						<td>排序方式</td>
+						<td>
+							<select name="sort">
+								<option value="total_sales_desc" selected="selected">销量从高到低</option>
+								<option value="total_sales_asc">销量从低到高</option>
+								<option value="tk_rate_desc">佣金比率从高到低</option>
+								<option value="tk_rate_asc">佣金比率从低到高</option>
+								<option value="tk_total_sales_desc">累计推广量从高到低</option>
+								<option value="tk_total_sales_asc">累计推广量从低到高</option>
+								<option value="tk_total_commi_desc">总支出佣金从高到低</option>
+								<option value="tk_total_commi_asc">总支出佣金从低到高</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>起始页</td>
+						<td><input name="page_no" placeholder="默认为1"/></td>
+					</tr>
+					<tr>
+						<td>总页数</td>
+						<td><input name="page_size" placeholder="默认为10，最大为100" value="1"/></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="采集"/></td>
+					</tr>
+				</tbody>
+			</table>	 
+		</form>
+	</div>
+	
+</block>

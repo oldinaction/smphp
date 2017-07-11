@@ -1,0 +1,117 @@
+<extend name="Public/base"/><!-- 继承父模板 -->
+
+<block name="container-header">
+	<div class="container-header">
+		<div class="banner">
+			<div class="banner-wrap">
+				<ul class="banner-img">
+					<li>
+						<a target="_blank" href="#">
+						<img width="1920" height="325" src="__UPLOAD__/1.jpg">
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="#">
+						<img width="1920" height="325" src="__UPLOAD__/2.jpg">
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="#">
+						<img width="1920" height="325" src="__UPLOAD__/3.jpg">
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="#">
+						<img width="1920" height="325" src="__UPLOAD__/4.jpg">
+						</a>
+					</li>
+				</ul>
+				<ul class="banner-triggers"></ul>
+				<span class="prev"><i class="iconfont icon-jiantouzuo"></i></span>
+				<span class="next"><i class="iconfont icon-jiantouyou"></i></span>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".prev,.next").hover(function(){
+					$(this).stop(true,false).fadeTo("show",0.9);
+				},function(){
+					$(this).stop(true,false).fadeTo("show",0.4);
+				});
+				$(".banner").slide({
+					titCell:".banner-triggers",
+					mainCell:".banner-img",
+					effect:"fold",
+					interTime:3500,
+					delayTime:500,
+					autoPlay:true,
+					autoPage:true,
+					trigger:"mouseover" 
+				});
+			});
+		</script>
+
+	</div>
+</block>
+
+<block name="main-products"><!-- 替换父模板的此区块 -->
+
+	<div class="products main-products">
+		<div class="products-title">
+			<h2>
+				<div class="pic_tit">
+					<img src="__IMG__/special.png">
+				</div>
+			</h2>
+		</div>
+		<div class="main-products-list">
+			<ul class="items clearfix">
+				
+				<volist name="goods" id="vo"><!-- think循环标签，goods为Controller中设置的 -->
+					<li class="item">
+						<div class="img-box">
+							<a target="_blank" href="#">
+								<img src="{$vo.pic_url}" width="330" height="345"/>
+								<div class="commit">
+									<div class="commit-box commit-global">蚂蚁窝精选 &nbsp;正品保证</div>
+								</div>
+							</a>
+							<div class="look_box">
+								<a class="look" target="_blank" href="#">去看看</a>
+							</div>
+						</div>
+						<a target="_blank" href="#">
+							<div class="item_detail">
+								<p class="title">
+									{$vo.title}
+								</p>
+								<div class="intro_box">
+									<div class="price_box">
+										<em>¥</em>
+										<span class="pnum">{$vo.price}</span>
+										<div class="price_icon_wrap">
+											<div class="icon_p"><span class="by_icon">包邮</span></div>
+											<span class="mnum">¥{$vo.reserve_price}</span>
+										</div>
+									</div>
+									<div class="numtimer_box">
+										<div class="num_box">销量：<span class="buy_num">{$vo.volume}</span></div>
+										<div>
+											<!-- <a data-type="0" biz-itemid="{$vo.num_iid}" data-tmpl="60x25" data-tmplid="623" data-rd="2" data-style="2" data-border="1" href="{$vo.item_url}">去购买</a> -->
+											<a href="Home/Item/jump?id={$vo.num_iid}&url={$vo.item_url}" target="_blank">去购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</volist>
+
+			</ul>
+		</div>
+	</div>
+	
+</block>	
+	
+	
+	

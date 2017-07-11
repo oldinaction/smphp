@@ -1,0 +1,66 @@
+[ 2016-01-02T11:56:18+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/test
+ERR: 模板不存在:./Mayi/Admin/View/Collect/collect.html
+
+[ 2016-01-02T11:56:57+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__CSS__/mayi.css?version=1.0
+ERR: 非法操作:__CSS__
+
+[ 2016-01-02T11:56:57+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/js/jquery-1.11.1.min.js
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T11:56:57+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/css/base.css?version=1.0
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T12:01:03+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/css/base.css?version=1.0
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T12:01:03+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/js/jquery-1.11.1.min.js
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T12:01:03+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__CSS__/mayi.css?version=1.0
+ERR: 非法操作:__CSS__
+
+[ 2016-01-02T12:03:11+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/js/jquery-1.11.1.min.js
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T12:03:11+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/css/base.css?version=1.0
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T12:03:11+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__CSS__/mayi.css?version=1.0
+ERR: 非法操作:__CSS__
+
+[ 2016-01-02T12:52:59+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/js/jquery-1.11.1.min.js
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T12:52:59+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/css/base.css?version=1.0
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T12:52:59+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__CSS__/mayi.css?version=1.0
+ERR: 非法操作:__CSS__
+
+[ 2016-01-02T12:53:33+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/css/base.css?version=1.0
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T12:53:33+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/js/jquery-1.11.1.min.js
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T12:53:33+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__CSS__/mayi.css?version=1.0
+ERR: 非法操作:__CSS__
+
+[ 2016-01-02T12:53:40+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/__STATIC__/js/jquery-1.11.1.min.js
+ERR: 非法操作:__STATIC__
+
+[ 2016-01-02T13:03:48+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/test
+ERR: 模板不存在:./Mayi/Admin/View//mayi/Collect/index.html
+
+[ 2016-01-02T13:03:57+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/test
+ERR: 模板不存在:./Mayi/Admin/View//mayi/Collect/index.html
+
+[ 2016-01-02T13:04:11+08:00 ] 127.0.0.1 /mayiteam/admin.php/Admin/Collect/test
+ERR: 模板不存在:./Mayi/Admin/View/mayi/Collect/index.html
+
+[ 2016-01-02T18:15:03+08:00 ] 127.0.0.1 /mayiteam/Admin/Collect/index.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mayiteam.sm_goods' doesn't exist
+
+[ 2016-01-02T18:40:38+08:00 ] 127.0.0.1 /mayiteam/Admin/Collect/index.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mayiteam.sm_collect_rules' doesn't exist
+

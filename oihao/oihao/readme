@@ -1,0 +1,84 @@
+1、oihao V1.0功能如下：
+	前台
+		|-主页根据点击量将站点和省份进行排序展现
+		|-增加新站收录功能
+	后台
+		|-管理员登陆功能
+		|-审核新增站点
+	
+	
+		
+2、数据库：
+有如下表：city、oihao_blog_site、oihao_blog_class、user
+city字段：
+	id
+	name
+	englishname
+	hit
+blog_site字段：
+	id
+	name
+	url
+	tag
+	description
+	class_id
+	city_id
+	email
+	add_time
+	is_deal
+	is_active
+	hit
+oihao_blog_class字段：
+	id
+	parent_id
+	classname
+	path
+user字段：
+	id
+	username
+	password
+
+
+
+3、站点分类如下：
+	IT综合
+		|-互联网资讯
+		|-资源分享
+		|-网络营销
+		|-数码产品
+		|-手机通讯
+		|-互联网安全
+		|-电脑硬件
+		|-其他
+	
+	开发设计
+		|-网站开发
+		|-游戏开发
+		|-移动开发
+		|-数据库开发
+		|-编程语言
+		|-平面设计
+		|-影视特效
+		|-其他
+		
+	网站建设
+		|-建站程序
+		|-前端设计
+		|-网站优化
+		|-域名空间
+		|-网站运营
+		|-其他
+	
+	休闲娱乐
+		|-生活旅游
+		|-电影音乐
+		|-游戏动漫
+		|-人生文学
+		|-兴趣爱好
+		|-其他
+	
+	公司机构
+		|-公益机构
+		|-商业公司
+		|-其他	
+		
