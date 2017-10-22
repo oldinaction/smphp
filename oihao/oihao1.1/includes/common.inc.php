@@ -35,15 +35,15 @@ require ROOT_PATH.'includes/global.func.php';
 require ROOT_PATH.'includes/mysql.func.php';
 
 #数据库配置信息
-define(DB_HOST, 'localhost');
-define(DB_USER, 'root');
-define(DB_PASSWORD, 'root');
-define(DB_NAME, 'oihao');
+// define(DB_HOST, 'localhost');
+// define(DB_USER, 'root');
+// define(DB_PASSWORD, 'root');
+// define(DB_NAME, 'oihao');
 
-// define(DB_HOST, 'oldinaction.hk956.xpidc.net');
-// define(DB_USER, 'a1007095513');
-// define(DB_PASSWORD, 'Y120306sq');
-// define(DB_NAME, 'a1007095513');
+define(DB_HOST, 'bdm271789431.my3w.com');
+define(DB_USER, 'bdm271789431');
+define(DB_PASSWORD, 'Y120306sq');
+define(DB_NAME, 'bdm271789431_db');
 
 //链接数据库
 _connect();
